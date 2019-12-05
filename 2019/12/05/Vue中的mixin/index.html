@@ -66,7 +66,7 @@
 
 
 
-  <meta name="keywords" content="windows,">
+  <meta name="keywords" content="vue,">
 
 
 
@@ -77,18 +77,18 @@
 
 
 
-<meta name="description" content="返回上一级文件  backspace谷歌浏览器切换tab ctrl+tab切换弹框  alt+tab谷歌浏览器新建tab ctrl+t谷歌浏览器撤销  ctrl+shift+t谷歌打开第N个tab  ctrl+N(N=1,2,3…)谷歌浏览器前进/后退 alt+-&amp;gt;/alt+&amp;lt;-关闭所有tab alt+f4关闭当前tab ctrl+f4">
-<meta name="keywords" content="windows">
+<meta name="description" content="使用mixin的原因 代码复用 项目的共享文件 减少耦合  mixin的用法 正常vue文件的结构，但以.js为后缀 在需要使用的文件中使用时，import share from @/mixins/share.js，然后在vue文件的data同级加上mixins: [share,mixin2,...]，引入后即可使用share.js中的所有方法 有时见到import {} from ...的用法，">
+<meta name="keywords" content="vue">
 <meta property="og:type" content="article">
-<meta property="og:title" content="windows系统常用快捷键总结">
-<meta property="og:url" content="http://tiantiyream.github.io/TianTiYream.github.io/2019/10/16/windows系统常用快捷键总结/index.html">
+<meta property="og:title" content="Vue中的mixin">
+<meta property="og:url" content="http://tiantiyream.github.io/TianTiYream.github.io/2019/12/05/Vue中的mixin/index.html">
 <meta property="og:site_name" content="Yream&#39;s Blog">
-<meta property="og:description" content="返回上一级文件  backspace谷歌浏览器切换tab ctrl+tab切换弹框  alt+tab谷歌浏览器新建tab ctrl+t谷歌浏览器撤销  ctrl+shift+t谷歌打开第N个tab  ctrl+N(N=1,2,3…)谷歌浏览器前进/后退 alt+-&amp;gt;/alt+&amp;lt;-关闭所有tab alt+f4关闭当前tab ctrl+f4">
+<meta property="og:description" content="使用mixin的原因 代码复用 项目的共享文件 减少耦合  mixin的用法 正常vue文件的结构，但以.js为后缀 在需要使用的文件中使用时，import share from @/mixins/share.js，然后在vue文件的data同级加上mixins: [share,mixin2,...]，引入后即可使用share.js中的所有方法 有时见到import {} from ...的用法，">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-10-16T01:25:10.179Z">
+<meta property="og:updated_time" content="2019-12-05T02:20:50.074Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="windows系统常用快捷键总结">
-<meta name="twitter:description" content="返回上一级文件  backspace谷歌浏览器切换tab ctrl+tab切换弹框  alt+tab谷歌浏览器新建tab ctrl+t谷歌浏览器撤销  ctrl+shift+t谷歌打开第N个tab  ctrl+N(N=1,2,3…)谷歌浏览器前进/后退 alt+-&amp;gt;/alt+&amp;lt;-关闭所有tab alt+f4关闭当前tab ctrl+f4">
+<meta name="twitter:title" content="Vue中的mixin">
+<meta name="twitter:description" content="使用mixin的原因 代码复用 项目的共享文件 减少耦合  mixin的用法 正常vue文件的结构，但以.js为后缀 在需要使用的文件中使用时，import share from @/mixins/share.js，然后在vue文件的data同级加上mixins: [share,mixin2,...]，引入后即可使用share.js中的所有方法 有时见到import {} from ...的用法，">
 
 
 
@@ -118,13 +118,13 @@
 
 
 
-  <link rel="canonical" href="http://tiantiyream.github.io/TianTiYream.github.io/2019/10/16/windows系统常用快捷键总结/">
+  <link rel="canonical" href="http://tiantiyream.github.io/TianTiYream.github.io/2019/12/05/Vue中的mixin/">
 
 
 
 
 
-  <title>windows系统常用快捷键总结 | Yream's Blog</title>
+  <title>Vue中的mixin | Yream's Blog</title>
   
 
 
@@ -261,7 +261,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://tiantiyream.github.io/TianTiYream.github.io/TianTiYream.github.io/2019/10/16/windows系统常用快捷键总结/">
+    <link itemprop="mainEntityOfPage" href="http://tiantiyream.github.io/TianTiYream.github.io/TianTiYream.github.io/2019/12/05/Vue中的mixin/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Yream">
@@ -278,7 +278,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">windows系统常用快捷键总结</h1>
+          <h1 class="post-title" itemprop="name headline">Vue中的mixin</h1>
         
 
         <div class="post-meta">
@@ -290,8 +290,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-10-16T09:10:51+08:00">
-                2019-10-16
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-12-05T09:51:50+08:00">
+                2019-12-05
               </time>
             
 
@@ -328,7 +328,21 @@
       
 
       
-        <h3 id="返回上一级文件-backspace"><a href="#返回上一级文件-backspace" class="headerlink" title="返回上一级文件  backspace"></a>返回上一级文件  backspace</h3><h3 id="谷歌浏览器切换tab-ctrl-tab"><a href="#谷歌浏览器切换tab-ctrl-tab" class="headerlink" title="谷歌浏览器切换tab ctrl+tab"></a>谷歌浏览器切换tab ctrl+tab</h3><h3 id="切换弹框-alt-tab"><a href="#切换弹框-alt-tab" class="headerlink" title="切换弹框  alt+tab"></a>切换弹框  alt+tab</h3><h3 id="谷歌浏览器新建tab-ctrl-t"><a href="#谷歌浏览器新建tab-ctrl-t" class="headerlink" title="谷歌浏览器新建tab ctrl+t"></a>谷歌浏览器新建tab ctrl+t</h3><h3 id="谷歌浏览器撤销-ctrl-shift-t"><a href="#谷歌浏览器撤销-ctrl-shift-t" class="headerlink" title="谷歌浏览器撤销  ctrl+shift+t"></a>谷歌浏览器撤销  ctrl+shift+t</h3><h3 id="谷歌打开第N个tab-ctrl-N-N-1-2-3…"><a href="#谷歌打开第N个tab-ctrl-N-N-1-2-3…" class="headerlink" title="谷歌打开第N个tab  ctrl+N(N=1,2,3…)"></a>谷歌打开第N个tab  ctrl+N(N=1,2,3…)</h3><h3 id="谷歌浏览器前进-后退-alt-gt-alt-lt"><a href="#谷歌浏览器前进-后退-alt-gt-alt-lt" class="headerlink" title="谷歌浏览器前进/后退 alt+-&gt;/alt+&lt;-"></a>谷歌浏览器前进/后退 alt+-&gt;/alt+&lt;-</h3><h3 id="关闭所有tab-alt-f4"><a href="#关闭所有tab-alt-f4" class="headerlink" title="关闭所有tab alt+f4"></a>关闭所有tab alt+f4</h3><h3 id="关闭当前tab-ctrl-f4"><a href="#关闭当前tab-ctrl-f4" class="headerlink" title="关闭当前tab ctrl+f4"></a>关闭当前tab ctrl+f4</h3>
+        <h3 id="使用mixin的原因"><a href="#使用mixin的原因" class="headerlink" title="使用mixin的原因"></a>使用mixin的原因</h3><ul>
+<li>代码复用</li>
+<li>项目的共享文件</li>
+<li>减少耦合</li>
+</ul>
+<h3 id="mixin的用法"><a href="#mixin的用法" class="headerlink" title="mixin的用法"></a>mixin的用法</h3><ul>
+<li>正常vue文件的结构，但以<code>.js</code>为后缀</li>
+<li>在需要使用的文件中使用时，<code>import share from @/mixins/share.js</code>，然后在vue文件的<code>data</code>同级加上<code>mixins: [share,mixin2,...]</code>，引入后即可使用share.js中的所有方法</li>
+<li>有时见到<code>import {} from ...</code>的用法，使用{}时，相应js文件中用export导出，不使用{}用export default导出</li>
+</ul>
+<h3 id="mixin的原理"><a href="#mixin的原理" class="headerlink" title="mixin的原理"></a>mixin的原理</h3><ul>
+<li>本质是js文件</li>
+<li>vue内部做了处理，使其具有生命周期函数、computed等功能，方便数据传输</li>
+</ul>
+
       
     </div>
     
@@ -345,7 +359,7 @@
       
         <div class="post-tags">
           
-            <a href="/TianTiYream.github.io/tags/windows/" rel="tag"># windows</a>
+            <a href="/TianTiYream.github.io/tags/vue/" rel="tag"># vue</a>
           
         </div>
       
@@ -358,8 +372,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/TianTiYream.github.io/2019/10/08/react初学安装/" rel="next" title="react初学安装">
-                <i class="fa fa-chevron-left"></i> react初学安装
+              <a href="/TianTiYream.github.io/2019/11/08/nodeJs-模块/" rel="next" title="nodeJs 模块">
+                <i class="fa fa-chevron-left"></i> nodeJs 模块
               </a>
             
           </div>
@@ -367,10 +381,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/TianTiYream.github.io/2019/11/08/nodeJs-模块/" rel="prev" title="nodeJs 模块">
-                nodeJs 模块 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -511,7 +521,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#返回上一级文件-backspace"><span class="nav-number">1.</span> <span class="nav-text">返回上一级文件  backspace</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#谷歌浏览器切换tab-ctrl-tab"><span class="nav-number">2.</span> <span class="nav-text">谷歌浏览器切换tab ctrl+tab</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#切换弹框-alt-tab"><span class="nav-number">3.</span> <span class="nav-text">切换弹框  alt+tab</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#谷歌浏览器新建tab-ctrl-t"><span class="nav-number">4.</span> <span class="nav-text">谷歌浏览器新建tab ctrl+t</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#谷歌浏览器撤销-ctrl-shift-t"><span class="nav-number">5.</span> <span class="nav-text">谷歌浏览器撤销  ctrl+shift+t</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#谷歌打开第N个tab-ctrl-N-N-1-2-3…"><span class="nav-number">6.</span> <span class="nav-text">谷歌打开第N个tab  ctrl+N(N=1,2,3…)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#谷歌浏览器前进-后退-alt-gt-alt-lt"><span class="nav-number">7.</span> <span class="nav-text">谷歌浏览器前进/后退 alt+-&gt;/alt+&lt;-</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#关闭所有tab-alt-f4"><span class="nav-number">8.</span> <span class="nav-text">关闭所有tab alt+f4</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#关闭当前tab-ctrl-f4"><span class="nav-number">9.</span> <span class="nav-text">关闭当前tab ctrl+f4</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#使用mixin的原因"><span class="nav-number">1.</span> <span class="nav-text">使用mixin的原因</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#mixin的用法"><span class="nav-number">2.</span> <span class="nav-text">mixin的用法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#mixin的原理"><span class="nav-number">3.</span> <span class="nav-text">mixin的原理</span></a></li></ol></div>
             
 
           </div>
