@@ -66,7 +66,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="JavaScript,">
 
 
 
@@ -77,17 +77,21 @@
 
 
 
-<meta name="description" content="_config.yml里的url和root12url: http://tiantiyream.github.io/TianTiYream.github.io #部署的网站名+github的项目名root: /TianTiYream.github.io/ #github的项目名  基本发布流程1234hexo g #生成静态文件hexo s #本地预览hexo d #部署到远程hexo d -g #">
+<meta name="description" content="原型链图解Object.prototype">
+<meta name="keywords" content="JavaScript">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo搭建博客遇到的一些问题">
-<meta property="og:url" content="http://tiantiyream.github.io/TianTiYream.github.io/2019/09/26/hexo搭建博客遇到的一些问题/index.html">
+<meta property="og:title" content="JavaScript原型链">
+<meta property="og:url" content="http://tiantiyream.github.io/TianTiYream.github.io/2020/06/10/JavaScript原型链/index.html">
 <meta property="og:site_name" content="Yream&#39;s Blog">
-<meta property="og:description" content="_config.yml里的url和root12url: http://tiantiyream.github.io/TianTiYream.github.io #部署的网站名+github的项目名root: /TianTiYream.github.io/ #github的项目名  基本发布流程1234hexo g #生成静态文件hexo s #本地预览hexo d #部署到远程hexo d -g #">
+<meta property="og:description" content="原型链图解Object.prototype">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-09-26T06:43:54.756Z">
+<meta property="og:image" content="http://tiantiyream.github.io/TianTiYream.github.io/2020/06/my_images/%E5%8E%9F%E5%9E%8B%E9%93%BE.png">
+<meta property="og:image" content="http://tiantiyream.github.io/TianTiYream.github.io/2020/06/my_images/Object.prototype.png">
+<meta property="og:updated_time" content="2020-06-10T03:30:17.955Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="hexo搭建博客遇到的一些问题">
-<meta name="twitter:description" content="_config.yml里的url和root12url: http://tiantiyream.github.io/TianTiYream.github.io #部署的网站名+github的项目名root: /TianTiYream.github.io/ #github的项目名  基本发布流程1234hexo g #生成静态文件hexo s #本地预览hexo d #部署到远程hexo d -g #">
+<meta name="twitter:title" content="JavaScript原型链">
+<meta name="twitter:description" content="原型链图解Object.prototype">
+<meta name="twitter:image" content="http://tiantiyream.github.io/TianTiYream.github.io/2020/06/my_images/%E5%8E%9F%E5%9E%8B%E9%93%BE.png">
 
 
 
@@ -117,13 +121,13 @@
 
 
 
-  <link rel="canonical" href="http://tiantiyream.github.io/TianTiYream.github.io/2019/09/26/hexo搭建博客遇到的一些问题/">
+  <link rel="canonical" href="http://tiantiyream.github.io/TianTiYream.github.io/2020/06/10/JavaScript原型链/">
 
 
 
 
 
-  <title>hexo搭建博客遇到的一些问题 | Yream's Blog</title>
+  <title>JavaScript原型链 | Yream's Blog</title>
   
 
 
@@ -260,7 +264,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://tiantiyream.github.io/TianTiYream.github.io/TianTiYream.github.io/2019/09/26/hexo搭建博客遇到的一些问题/">
+    <link itemprop="mainEntityOfPage" href="http://tiantiyream.github.io/TianTiYream.github.io/TianTiYream.github.io/2020/06/10/JavaScript原型链/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Yream">
@@ -277,7 +281,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">hexo搭建博客遇到的一些问题</h1>
+          <h1 class="post-title" itemprop="name headline">JavaScript原型链</h1>
         
 
         <div class="post-meta">
@@ -289,8 +293,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-26T11:13:10+08:00">
-                2019-09-26
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-06-10T11:19:47+08:00">
+                2020-06-10
               </time>
             
 
@@ -327,16 +331,7 @@
       
 
       
-        <h3 id="config-yml里的url和root"><a href="#config-yml里的url和root" class="headerlink" title="_config.yml里的url和root"></a>_config.yml里的url和root</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">url: http://tiantiyream.github.io/TianTiYream.github.io <span class="comment">#部署的网站名+github的项目名</span></span><br><span class="line">root: /TianTiYream.github.io/ <span class="comment">#github的项目名</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="基本发布流程"><a href="#基本发布流程" class="headerlink" title="基本发布流程"></a>基本发布流程</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo g <span class="comment">#生成静态文件</span></span><br><span class="line">hexo s <span class="comment">#本地预览</span></span><br><span class="line">hexo d <span class="comment">#部署到远程</span></span><br><span class="line">hexo d -g <span class="comment">#生成并发布简写形式</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="文章操作流程"><a href="#文章操作流程" class="headerlink" title="文章操作流程"></a>文章操作流程</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo new <span class="string">"文章标题"</span> <span class="comment">#新建一篇文章</span></span><br><span class="line"><span class="comment">#打开_source文件夹下新建的文章，用md编辑器编辑</span></span><br><span class="line"><span class="comment">#保存文章，进行上面的基本发布流程操作</span></span><br><span class="line"><span class="comment">#删除文章可在本地删除后再进行发布流程操作</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="添加萌宠"><a href="#添加萌宠" class="headerlink" title="添加萌宠"></a>添加萌宠</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-helper-live2d --save <span class="comment">#安装插件</span></span><br><span class="line">npm install live2d-widget-model-tororo <span class="comment">#白猫模型</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 右下角动画模型</span></span><br><span class="line">live2d:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  scriptFrom: <span class="built_in">local</span></span><br><span class="line">  pluginRootPath: live2dw/</span><br><span class="line">  pluginJsPath: lib/</span><br><span class="line">  pluginModelPath: assets/</span><br><span class="line">  model:</span><br><span class="line">    <span class="comment"># 这是白猫的模型</span></span><br><span class="line">    use: live2d-widget-model-tororo</span><br><span class="line">  display:</span><br><span class="line">    <span class="comment"># 设置模型的位置</span></span><br><span class="line">    position: right</span><br><span class="line">  mobile:</span><br><span class="line">    show: <span class="literal">false</span></span><br><span class="line">  react:</span><br><span class="line">    opacityDefault: 1</span><br><span class="line">    opacityOnHover: 1</span><br></pre></td></tr></table></figure>
-
+        <p>原型链图解<br><img src="../../my_images/%E5%8E%9F%E5%9E%8B%E9%93%BE.png" alt="avatar"><br>Object.prototype<br><img src="../../my_images/Object.prototype.png" alt="avatar"></p>
 
       
     </div>
@@ -352,6 +347,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/TianTiYream.github.io/tags/JavaScript/" rel="tag"># JavaScript</a>
+          
+        </div>
+      
 
       
       
@@ -361,15 +362,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/TianTiYream.github.io/2020/01/14/搭建vue项目/" rel="next" title="搭建vue项目">
+                <i class="fa fa-chevron-left"></i> 搭建vue项目
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/TianTiYream.github.io/2019/10/08/react初学安装/" rel="prev" title="react初学安装">
-                react初学安装 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -421,17 +422,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -500,22 +492,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#config-yml里的url和root"><span class="nav-number">1.</span> <span class="nav-text">_config.yml里的url和root</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#基本发布流程"><span class="nav-number">2.</span> <span class="nav-text">基本发布流程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文章操作流程"><span class="nav-number">3.</span> <span class="nav-text">文章操作流程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加萌宠"><span class="nav-number">4.</span> <span class="nav-text">添加萌宠</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       

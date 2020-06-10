@@ -1822,7 +1822,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #3d050b;
+  background: #a387ee;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2919,6 +2919,13 @@ hr {
 .site-description,
 .sidebar a {
   color: #666;
+}
+.menu .menu-item a:hover {
+  background: none;
+  font-weight: 700;
+}
+.sidebar a:hover {
+  color: #000;
 }
 .header {
   background-image: url("../images/bg.jpg");
