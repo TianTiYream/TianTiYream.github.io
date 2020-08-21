@@ -260,6 +260,161 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://tiantiyream.github.io/TianTiYream.github.io/TianTiYream.github.io/2020/08/21/正向代理和反向代理/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yream">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/TianTiYream.github.io/images/photo.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Yream's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/TianTiYream.github.io/2020/08/21/正向代理和反向代理/" itemprop="url">正向代理和反向代理</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-08-21T14:39:03+08:00">
+                2020-08-21
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/TianTiYream.github.io/categories/Vue/" itemprop="url" rel="index">
+                    <span itemprop="name">Vue</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="正向代理"><a href="#正向代理" class="headerlink" title="正向代理"></a>正向代理</h3><p>正向代理应用场景有访问外国网站等</p>
+<p>在客户端与目的服务器之间有一个代理服务器，客户端无法直接访问目的服务器，代理服务器可以直接访问目的服务器</p>
+<p>所以客户端发送请求给代理服务器，服务器再转发给目的服务器，得到目的服务器的响应后，再转发回客户端</p>
+<p>目的服务器并不知道真正的请求数据的是哪个客户端</p>
+<h3 id="反向代理"><a href="#反向代理" class="headerlink" title="反向代理"></a>反向代理</h3><p>反向代理应用场景有浏览器跨域请求</p>
+<p>同样在客户端与目的服务器之间有一个代理服务器，客户端无法直接访问目的服务器，代理服务器可以直接访问目的服务器</p>
+<p>客户端发送请求给代理服务器，对于客户端来说，代理服务器就是它的目的服务器。然后代理服务器转发请求给真正的服务器，拿到响应后返回给客户端。</p>
+<p>在此过程中客户端一直访问的都是一个固定的服务器（即代理服务器），并不知道真正响应的是哪个服务器</p>
+<h3 id="简单总结"><a href="#简单总结" class="headerlink" title="简单总结"></a>简单总结</h3><p>正向代理：代理的是客户端</p>
+<p>反向代理：代理的是服务器</p>
+<p>以Vue请求后台服务为例：</p>
+<p><code>proxyTable</code>表里配置，’/api’是以’/api/XXX’的请求路径会发送到反向代理服务器，target为前端服务器地址，是否跨域为true，在代理服务器转发请求时会删除请求路径中的’/api’</p>
+<p><img src="C:%5CUsers%5CYream%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200821145212957.png" alt="image-20200821145212957"></p>
+<p>反向代理服务器由于和前端服务器同源，所以可以与浏览器进行数据交互</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://tiantiyream.github.io/TianTiYream.github.io/TianTiYream.github.io/2020/07/27/Vue响应式原理/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1643,147 +1798,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://tiantiyream.github.io/TianTiYream.github.io/TianTiYream.github.io/2019/10/16/windows系统常用快捷键总结/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Yream">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/TianTiYream.github.io/images/photo.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Yream's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/TianTiYream.github.io/2019/10/16/windows系统常用快捷键总结/" itemprop="url">windows系统常用快捷键总结</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-10-16T09:10:51+08:00">
-                2019-10-16
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/TianTiYream.github.io/categories/windows/" itemprop="url" rel="index">
-                    <span itemprop="name">windows</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="返回上一级文件-backspace"><a href="#返回上一级文件-backspace" class="headerlink" title="返回上一级文件  backspace"></a>返回上一级文件  backspace</h3><h3 id="谷歌浏览器切换tab-ctrl-tab"><a href="#谷歌浏览器切换tab-ctrl-tab" class="headerlink" title="谷歌浏览器切换tab ctrl+tab"></a>谷歌浏览器切换tab ctrl+tab</h3><h3 id="切换弹框-alt-tab"><a href="#切换弹框-alt-tab" class="headerlink" title="切换弹框  alt+tab"></a>切换弹框  alt+tab</h3><h3 id="谷歌浏览器新建tab-ctrl-t"><a href="#谷歌浏览器新建tab-ctrl-t" class="headerlink" title="谷歌浏览器新建tab ctrl+t"></a>谷歌浏览器新建tab ctrl+t</h3><h3 id="谷歌浏览器撤销-ctrl-shift-t"><a href="#谷歌浏览器撤销-ctrl-shift-t" class="headerlink" title="谷歌浏览器撤销  ctrl+shift+t"></a>谷歌浏览器撤销  ctrl+shift+t</h3><h3 id="谷歌打开第N个tab-ctrl-N-N-1-2-3…"><a href="#谷歌打开第N个tab-ctrl-N-N-1-2-3…" class="headerlink" title="谷歌打开第N个tab  ctrl+N(N=1,2,3…)"></a>谷歌打开第N个tab  ctrl+N(N=1,2,3…)</h3><h3 id="谷歌浏览器前进-后退-alt-gt-alt-lt"><a href="#谷歌浏览器前进-后退-alt-gt-alt-lt" class="headerlink" title="谷歌浏览器前进/后退 alt+-&gt;/alt+&lt;-"></a>谷歌浏览器前进/后退 alt+-&gt;/alt+&lt;-</h3><h3 id="关闭所有tab-alt-f4"><a href="#关闭所有tab-alt-f4" class="headerlink" title="关闭所有tab alt+f4"></a>关闭所有tab alt+f4</h3><h3 id="关闭当前tab-ctrl-f4"><a href="#关闭当前tab-ctrl-f4" class="headerlink" title="关闭当前tab ctrl+f4"></a>关闭当前tab ctrl+f4</h3>
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1836,7 +1850,7 @@
               
                 <a href="/TianTiYream.github.io/archives/">
               
-                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-count">13</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
