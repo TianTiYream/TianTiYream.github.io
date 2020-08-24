@@ -1,694 +1,98 @@
-<!DOCTYPE html>
-
-
-
-  
-
-
-<html class="theme-next mist use-motion" lang="zh-Hans">
-<head><meta name="generator" content="Hexo 3.9.0">
-  <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="theme-color" content="#222">
-
-
-
-
-
-
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform">
-<meta http-equiv="Cache-Control" content="no-siteapp">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  <link href="/TianTiYream.github.io/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
-
-
-
-
-
-
-
-<link href="/TianTiYream.github.io/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
-
-<link href="/TianTiYream.github.io/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/TianTiYream.github.io/images/heart.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/TianTiYream.github.io/images/heart.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/TianTiYream.github.io/images/heart.png?v=5.1.4">
-
-
-
-
-
-
-  <meta name="keywords" content="Hexo, NexT">
-
-
-
-
-
-
-
-
-
-
-<meta name="description" content="for code, for share">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Yream&#39;s Blog">
-<meta property="og:url" content="http://tiantiyream.github.io/TianTiYream.github.io/tags/Vue/index.html">
-<meta property="og:site_name" content="Yream&#39;s Blog">
-<meta property="og:description" content="for code, for share">
-<meta property="og:locale" content="zh-Hans">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Yream&#39;s Blog">
-<meta name="twitter:description" content="for code, for share">
-
-
-
-<script type="text/javascript" id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/TianTiYream.github.io/',
-    scheme: 'Mist',
-    version: '5.1.4',
-    sidebar: {"position":"left","display":"always","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: true,
-    tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    duoshuo: {
-      userId: '0',
-      author: '博主'
-    },
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
-  };
-</script>
-
-
-
-  <link rel="canonical" href="http://tiantiyream.github.io/TianTiYream.github.io/tags/Vue/">
-
-
-
-
-
-  <title>标签: Vue | Yream's Blog</title>
-  
-
-
-
-
-
-
-
-
-</head>
-
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
-
-  
-  
-    
-  
-
-  <div class="container sidebar-position-left ">
-    <div class="headband"></div>
-
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
-    
-
-    <div class="custom-logo-site-title">
-      <a href="/TianTiYream.github.io/" class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Yream's Blog</span>
-        <span class="logo-line-after"><i></i></span>
-      </a>
-    </div>
-      
-        <p class="site-subtitle"></p>
-      
-  </div>
-
-  <div class="site-nav-toggle">
-    <button>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-    </button>
-  </div>
-</div>
-
-<nav class="site-nav">
-  
-
-  
-    <ul id="menu" class="menu">
-      
-        
-        <li class="menu-item menu-item-home">
-          <a href="/TianTiYream.github.io/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
-            
-            首页
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-about">
-          <a href="/TianTiYream.github.io/about/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
-            
-            关于
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/TianTiYream.github.io/tags/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
-            
-            标签
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-categories">
-          <a href="/TianTiYream.github.io/categories/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
-            
-            分类
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-archives">
-          <a href="/TianTiYream.github.io/archives/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
-            
-            归档
-          </a>
-        </li>
-      
-
-      
-    </ul>
-  
-
-  
-</nav>
-
-
-
- </div>
-    </header>
-
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          <div id="content" class="content">
-            
-
-  
-  
-  
-  <div class="post-block tag">
-
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>Vue<small>标签</small>
-        </h1>
-      </div>
-
-      
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/TianTiYream.github.io/2020/08/21/正向代理和反向代理/" itemprop="url">
-              
-                <span itemprop="name">正向代理和反向代理</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2020-08-21T14:39:03+08:00" content="2020-08-21">
-          08-21
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/TianTiYream.github.io/2020/07/27/Vue响应式原理/" itemprop="url">
-              
-                <span itemprop="name">Vue响应式原理</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2020-07-27T16:03:54+08:00" content="2020-07-27">
-          07-27
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/TianTiYream.github.io/2020/06/28/vuex学习总结/" itemprop="url">
-              
-                <span itemprop="name">vuex学习总结</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2020-06-28T17:05:38+08:00" content="2020-06-28">
-          06-28
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/TianTiYream.github.io/2020/01/14/搭建vue项目/" itemprop="url">
-              
-                <span itemprop="name">搭建Vue项目</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2020-01-14T10:35:10+08:00" content="2020-01-14">
-          01-14
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/TianTiYream.github.io/2019/12/05/Vue中的mixin/" itemprop="url">
-              
-                <span itemprop="name">Vue中的mixin</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-12-05T09:51:50+08:00" content="2019-12-05">
-          12-05
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-    </div>
-
-  </div>
-  
-  
-  
-
-  
-
-
-          </div>
-          
-
-
-          
-
-        </div>
-        
-          
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
-  </div>
-
-  <aside id="sidebar" class="sidebar">
-    
-    <div class="sidebar-inner">
-
-      
-
-      
-
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
-        <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-            
-              <img class="site-author-image" itemprop="image" src="/TianTiYream.github.io/images/photo.jpg" alt="Yream">
-            
-              <p class="site-author-name" itemprop="name">Yream</p>
-              <p class="site-description motion-element" itemprop="description">for code, for share</p>
-          </div>
-
-          <nav class="site-state motion-element">
-
-            
-              <div class="site-state-item site-state-posts">
-              
-                <a href="/TianTiYream.github.io/archives/">
-              
-                  <span class="site-state-item-count">13</span>
-                  <span class="site-state-item-name">日志</span>
-                </a>
-              </div>
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-categories">
-                <a href="/TianTiYream.github.io/categories/index.html">
-                  <span class="site-state-item-count">7</span>
-                  <span class="site-state-item-name">分类</span>
-                </a>
-              </div>
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-tags">
-                <a href="/TianTiYream.github.io/tags/index.html">
-                  <span class="site-state-item-count">7</span>
-                  <span class="site-state-item-name">标签</span>
-                </a>
-              </div>
-            
-
-          </nav>
-
-          
-
-          
-            <div class="links-of-author motion-element">
-                
-                  <span class="links-of-author-item">
-                    <a href="https://github.com/TianTiYream" target="_blank" title="GitHub">
-                      
-                        <i class="fa fa-fw fa-github"></i>GitHub</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="mailto:tiantiyream@gmail.com" target="_blank" title="E-Mail">
-                      
-                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
-                  </span>
-                
-            </div>
-          
-
-          
-          
-
-          
-          
-
-          
-
-        </div>
-      </section>
-
-      
-
-      
-
-    </div>
-  </aside>
-
-
-        
-      </div>
-    </main>
-
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
-  <span class="with-love">
-    <i class="fa fa-user"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">Yream</span>
-
-  
-</div>
-
-
-
-
-
-
-
-
-
-        
-
-
-
-
-
-
-
-        
-      </div>
-    </footer>
-
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
-    
-
-    
-
-  </div>
-
-  
-
-<script type="text/javascript">
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
-  }
-</script>
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-    <script type="text/javascript" src="/TianTiYream.github.io/lib/jquery/index.js?v=2.1.3"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/TianTiYream.github.io/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/TianTiYream.github.io/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/TianTiYream.github.io/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/TianTiYream.github.io/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/TianTiYream.github.io/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-  
-
-
-  
-
-
-  <script type="text/javascript" src="/TianTiYream.github.io/js/src/utils.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/TianTiYream.github.io/js/src/motion.js?v=5.1.4"></script>
-
-
-
-  
-  
-
-  
-
-  
-
-
-  <script type="text/javascript" src="/TianTiYream.github.io/js/src/bootstrap.js?v=5.1.4"></script>
-
-
-
-  
-
-
-  
-
-
-
-
-	
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-
-  
-
-  
-
-<script src="/TianTiYream.github.io/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","model":{"jsonPath":"/TianTiYream.github.io/live2dw/assets/tororo.model.json"},"display":{"position":"right"},"mobile":{"show":false},"react":{"opacityDefault":1,"opacityOnHover":1},"log":false,"tagMode":false});</script></body>
-</html>
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="generator" content="Hexo 4.2.1"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>标签: Vue - Yream&#039;s Blog</title><meta description="for code, for share"><meta property="og:type" content="blog"><meta property="og:title" content="Yream&#039;s Blog"><meta property="og:url" content="http://tiantiyream.github.io/TianTiYream.github.io"><meta property="og:site_name" content="Yream&#039;s Blog"><meta property="og:description" content="for code, for share"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="http://tiantiyream.github.io/TianTiYream.github.io/img/og_image.png"><meta property="article:author" content="Yream"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/TianTiYream.github.io/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://tiantiyream.github.io/TianTiYream.github.io"},"headline":"Yream's Blog","image":["http://tiantiyream.github.io/TianTiYream.github.io/img/og_image.png"],"author":{"@type":"Person","name":"Yream"},"description":"for code, for share"}</script><link rel="icon" href="/TianTiYream.github.io/img/heart.png"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/TianTiYream.github.io/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/TianTiYream.github.io/"><img src="/TianTiYream.github.io/img/heart.png" alt="Yream&#039;s Blog" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/TianTiYream.github.io/">首页</a><a class="navbar-item" href="/TianTiYream.github.io/archives">归档</a><a class="navbar-item" href="/TianTiYream.github.io/categories">分类</a><a class="navbar-item" href="/TianTiYream.github.io/tags">标签</a><a class="navbar-item" href="/TianTiYream.github.io/about">关于</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><div class="card-content"><nav class="breadcrumb" aria-label="breadcrumbs"><ul><li><a href="/TianTiYream.github.io/tags">标签</a></li><li class="is-active"><a href="#" aria-current="page">Vue</a></li></ul></nav></div></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-08-21T06:39:03.000Z" title="2020-08-21T06:39:03.000Z">2020-08-21</time><span class="level-item"><a class="link-muted" href="/TianTiYream.github.io/categories/Vue/">Vue</a></span><span class="level-item">3 分钟 读完 (大约 488 个字)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/TianTiYream.github.io/2020/08/21/%E6%AD%A3%E5%90%91%E4%BB%A3%E7%90%86%E5%92%8C%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/">正向代理和反向代理</a></h1><div class="content"><p>正向代理与反向代理</p></div><a class="article-more button is-small size-small" href="/TianTiYream.github.io/2020/08/21/%E6%AD%A3%E5%90%91%E4%BB%A3%E7%90%86%E5%92%8C%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/#more">阅读更多</a></article></div><div class="card"><div class="card-image"><a class="image is-7by3" href="/TianTiYream.github.io/2020/07/27/Vue%E5%93%8D%E5%BA%94%E5%BC%8F%E5%8E%9F%E7%90%86/"><img class="thumbnail" src="/TianTiYream.github.io/gallery/thumbnails/rat.jpg" alt="Vue响应式原理"></a></div><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-07-27T08:03:54.000Z" title="2020-07-27T08:03:54.000Z">2020-07-27</time><span class="level-item"><a class="link-muted" href="/TianTiYream.github.io/categories/Vue/">Vue</a></span><span class="level-item">2 分钟 读完 (大约 251 个字)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/TianTiYream.github.io/2020/07/27/Vue%E5%93%8D%E5%BA%94%E5%BC%8F%E5%8E%9F%E7%90%86/">Vue响应式原理</a></h1><div class="content"><h3 id="初步理解"><a href="#初步理解" class="headerlink" title="初步理解"></a>初步理解</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> obj = &#123;</span><br><span class="line">  name: <span class="string">'xiaoli'</span>,</span><br><span class="line">  age: <span class="number">12</span>,</span><br><span class="line">  sex: <span class="string">'male'</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 对obj的每个属性做响应式处理</span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> key <span class="keyword">in</span> obj) &#123;</span><br><span class="line">  reactive(obj, key, obj[key])</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 响应式处理函数</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">reactive</span>(<span class="params">obj, key, val</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">Object</span>.defineProperty(obj, key, &#123;</span><br><span class="line">    <span class="keyword">get</span>: function () &#123;</span><br><span class="line">      <span class="keyword">const</span> value = val</span><br><span class="line">      <span class="comment">// watcher() 通知对view层渲染</span></span><br><span class="line">      <span class="built_in">console</span>.log(key + <span class="string">' view 渲染 '</span> + value)</span><br><span class="line">      <span class="keyword">return</span> value</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="keyword">set</span>: function (newValue) &#123;</span><br><span class="line">      val = newValue</span><br><span class="line">      <span class="comment">// watcher() 通知对view层更新</span></span><br><span class="line">      <span class="built_in">console</span>.log(key + <span class="string">' view 更新 '</span> + val)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 测试</span></span><br><span class="line">obj.name = <span class="string">'xiaohong'</span></span><br><span class="line">obj.sex = <span class="string">'female'</span></span><br><span class="line"><span class="built_in">console</span>.log(obj.name, <span class="string">'name'</span>, obj.sex, <span class="string">'sex'</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">// 模拟没有在data中初始化的属性，没有做响应式处理，watcher不会通知更新和渲染</span></span><br><span class="line">obj.hobby = <span class="string">'play'</span></span><br><span class="line"><span class="built_in">console</span>.log(obj.hobby, <span class="string">'hobby'</span>)</span><br></pre></td></tr></table></figure>
+
+<h3 id="进阶理解"><a href="#进阶理解" class="headerlink" title="进阶理解"></a>进阶理解</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 发布/订阅模式</span></span><br><span class="line"><span class="comment">// 将数据data变成可观察的</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">observer</span> (<span class="params">obj, cb</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">Object</span>.keys(obj).forEach(<span class="function">(<span class="params">key</span>) =&gt;</span> defineReactive(obj, key, obj[key], cb))</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">defineReactive</span>(<span class="params">obj, key, val, cb</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">Object</span>.defineProperty(obj, key, &#123;</span><br><span class="line">    enumerable: <span class="literal">true</span>,</span><br><span class="line">    configurable: <span class="literal">true</span>,</span><br><span class="line">    <span class="keyword">get</span>: () =&gt; &#123;</span><br><span class="line">      <span class="comment">// 依赖收集等</span></span><br><span class="line">      <span class="keyword">return</span> val</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="keyword">set</span>: newVal =&gt; &#123;</span><br><span class="line">      val = newVal</span><br><span class="line">      cb() <span class="comment">// 订阅者收到消息的回调</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Vue</span> </span>&#123;</span><br><span class="line">  <span class="keyword">constructor</span>(options) &#123;</span><br><span class="line">    <span class="keyword">this</span>._data = options.data</span><br><span class="line">    observer(<span class="keyword">this</span>._data, options.render)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> app = <span class="keyword">new</span> Value(&#123;</span><br><span class="line">  el: <span class="string">'#app'</span>,</span><br><span class="line">  data: &#123;</span><br><span class="line">    text: <span class="string">'text'</span>,</span><br><span class="line">    text2: <span class="string">'text2'</span></span><br><span class="line">  &#125;,</span><br><span class="line">  render() &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'render'</span>)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></div></article></div><div class="card"><div class="card-image"><a class="image is-7by3" href="/TianTiYream.github.io/2020/06/28/vuex%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/"><img class="thumbnail" src="/TianTiYream.github.io/gallery/thumbnails/rat.jpg" alt="vuex学习总结"></a></div><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-06-28T09:05:38.000Z" title="2020-06-28T09:05:38.000Z">2020-06-28</time><span class="level-item"><a class="link-muted" href="/TianTiYream.github.io/categories/Vue/">Vue</a></span><span class="level-item">4 分钟 读完 (大约 647 个字)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/TianTiYream.github.io/2020/06/28/vuex%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/">vuex学习总结</a></h1><div class="content"><h3 id="state"><a href="#state" class="headerlink" title="state"></a>state</h3><ol>
+<li>注册store<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> app = <span class="keyword">new</span> Vue(&#123;</span><br><span class="line">  el: <span class="string">'#app'</span>,</span><br><span class="line">  store,</span><br><span class="line">  template: <span class="string">`</span></span><br><span class="line"><span class="string">  &lt;div class='app&gt;</span></span><br><span class="line"><span class="string">    counter</span></span><br><span class="line"><span class="string">  &lt;/div&gt;</span></span><br><span class="line"><span class="string">  `</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></li>
+<li>注册后的组件可使用this.$store获取<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> Counter = &#123;</span><br><span class="line">  count () &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>.$store.state.count</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li>获取多个状态<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">computed: &#123;</span><br><span class="line">  mapState(&#123;</span><br><span class="line">    count: <span class="function"><span class="params">state</span> =&gt;</span> state.count,</span><br><span class="line">    countAlias: <span class="string">'count'</span>,</span><br><span class="line">    countPlusLocal ( state ) &#123;</span><br><span class="line">      <span class="keyword">return</span> state.count + <span class="keyword">this</span>.localCount</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li>当计算属性的名称与store中的属性相同时可使用字符串数组<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">computed: &#123;</span><br><span class="line">  mapState([</span><br><span class="line">    <span class="comment">// 相当于 this.count =&gt; state.count</span></span><br><span class="line">    <span class="string">'count'</span></span><br><span class="line">  ])</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li>多个store属性与局部属性混合使用<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> Counter = &#123;</span><br><span class="line">  computed: &#123;</span><br><span class="line">    localCount () &#123;</span><br><span class="line">      <span class="keyword">return</span> <span class="keyword">this</span>.count</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="comment">// 扩展运算符</span></span><br><span class="line">    ...mapState(&#123;</span><br><span class="line">      <span class="comment">// ...</span></span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="getter"><a href="#getter" class="headerlink" title="getter"></a>getter</h3></li>
+</ol>
+<ul>
+<li>getter: state派生状态</li>
+</ul>
+<ol>
+<li>getter定义<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> store = <span class="keyword">new</span> Vuex.Store(&#123;</span><br><span class="line">  state: &#123;</span><br><span class="line">    todos: [</span><br><span class="line">      &#123;<span class="attr">id</span>: <span class="string">'1'</span>, <span class="attr">text</span>: <span class="string">'...'</span>, <span class="attr">done</span>: <span class="literal">true</span>&#125;,</span><br><span class="line">      &#123;<span class="attr">id</span>: <span class="string">'2'</span>, <span class="attr">text</span>: <span class="string">'...'</span>, <span class="attr">done</span>: <span class="literal">false</span>&#125;</span><br><span class="line">    ]</span><br><span class="line">  &#125;,</span><br><span class="line">  getters: &#123;</span><br><span class="line">    <span class="comment">// 1.1 属性定义</span></span><br><span class="line">    doneTodos: <span class="function">(<span class="params">state</span>) =&gt;</span> &#123;</span><br><span class="line">      <span class="keyword">return</span> state.todos.filter(<span class="function"><span class="params">todo</span> =&gt;</span> todo.done)</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="comment">// 1.2 可传入其他getter做为第二个参数</span></span><br><span class="line">    doneTodosCount: <span class="function">(<span class="params">state, getters</span>) =&gt;</span> &#123;</span><br><span class="line">      <span class="keyword">return</span> getters.doneTodos.length</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="comment">// 1.3 可用方法定义</span></span><br><span class="line">    getTodosById: <span class="function">(<span class="params">state</span>) =&gt;</span> <span class="function">(<span class="params">id</span>) =&gt;</span> &#123;</span><br><span class="line">      <span class="keyword">return</span> state.todos.find(<span class="function"><span class="params">todo</span> =&gt;</span> todo.id === id)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></li>
+<li>访问<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 2.1 属性访问</span></span><br><span class="line">store.getters.doneTodos <span class="comment">// [&#123;id: '1', text: '...', done: true&#125;]</span></span><br><span class="line">store.getters.doneTodosCount <span class="comment">// 1</span></span><br><span class="line"><span class="comment">// 2.2 方法访问</span></span><br><span class="line"><span class="comment">// 方法访问时不会缓存结果，每次都重新调用</span></span><br><span class="line">store.getters.getTodosById(<span class="string">'2'</span>) <span class="comment">// &#123;id: '2', text: '...', done: false&#125;</span></span><br></pre></td></tr></table></figure></li>
+<li>mapGetters获取多个getter<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; mapGetters &#125; <span class="keyword">from</span> <span class="string">'vuex'</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">  computed: &#123;</span><br><span class="line">    ...mapGetters([<span class="string">'doneTodos'</span>, <span class="string">'doneTodosCount'</span>]) <span class="comment">// 3.1 将getters映射到局部计算属性，属性名相同</span></span><br><span class="line">  &#125;,</span><br><span class="line">  computed: &#123;</span><br><span class="line">    ...mapGetters(&#123;</span><br><span class="line">      count: <span class="string">'doneTodosCount'</span> <span class="comment">// 3.2 如果用不同的局部属性名称需要使用对象形式</span></span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="mutation"><a href="#mutation" class="headerlink" title="mutation"></a>mutation</h3></li>
+</ol>
+<ul>
+<li>mutation是唯一改变store中state的方法</li>
+</ul>
+<ol>
+<li><p>定义</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> store = <span class="keyword">new</span> Vuex.Store(&#123;</span><br><span class="line">  state: &#123;</span><br><span class="line">    count: <span class="number">0</span></span><br><span class="line">  &#125;,</span><br><span class="line">  mutations: &#123;</span><br><span class="line">    <span class="comment">// 1.1 没有载荷</span></span><br><span class="line">    increment (state) &#123;</span><br><span class="line">      state.count ++</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="comment">// 1.2 有载荷</span></span><br><span class="line">    incrementBy (state, n) &#123;</span><br><span class="line">      state.count += n</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="comment">// 1.3 有载荷payload并且是对象</span></span><br><span class="line">    incrementByObj (state, payload) &#123;</span><br><span class="line">      state.count += payload.amount</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>提交</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 2.1 没有载荷，触发increment事件类型</span></span><br><span class="line">store.commit(<span class="string">'increment'</span>)</span><br><span class="line"><span class="comment">// 2.2 有载荷</span></span><br><span class="line">store.commit(<span class="string">'incrementBy'</span>, <span class="number">10</span>)</span><br><span class="line"><span class="comment">// 2.3 有载荷，并使用对象方便传入多个属性</span></span><br><span class="line">store.commit(<span class="string">'incrementByObj'</span>, &#123;</span><br><span class="line">  amount: <span class="number">10</span></span><br><span class="line">&#125;)</span><br><span class="line"><span class="comment">// 2.4 对象风格 事件类型写入对象</span></span><br><span class="line">store.commit(&#123;</span><br><span class="line">  type: <span class="string">'incrementByObj'</span>, <span class="comment">// type为事件类型</span></span><br><span class="line">  amount: <span class="number">10</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></li>
+<li><p>mutations必须是同步函数</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 同步函数可以保证调试时devtools可以看到store中每个时刻的state，异步函数则无法追踪状态的改变</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>mapMutations 简化代码，方便引入多个mutation</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; mapMutations &#125; <span class="keyword">from</span> <span class="string">'vuex'</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">  methods: &#123;</span><br><span class="line">    ...mapMutations([</span><br><span class="line">      <span class="string">'increment'</span>, <span class="comment">// 将this.increment()映射为this.$store.commit('increment')</span></span><br><span class="line">      <span class="string">'incrementBy'</span>, <span class="comment">// 将this.incrementBy()映射为this.$store.commit('incrementBy')</span></span><br><span class="line">      <span class="string">'incrementByObj'</span> <span class="comment">// 将this.incrementByObj映射为this.$store.commit('incrementByObj')</span></span><br><span class="line">    ]),</span><br><span class="line">    ...mapMutations(&#123;</span><br><span class="line">      add: <span class="string">'increment'</span> <span class="comment">// 将this.add()映射this.$store.commit('increment')</span></span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>mutations遵循Vue的响应式原理</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 5.1 store中先初始化所有属性</span></span><br><span class="line"><span class="comment">// 5.2 若对象中需要新增属性，可使用Vue.set(obj, 'newProp', 123)或者this.state = &#123;...this.state, newProp: 123&#125;</span></span><br></pre></td></tr></table></figure></li>
+<li><p>使用常量替代事件类型 使linter类工具发挥作用 代码结构更加清晰</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// mutation-types.js</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">const</span> SOME_MUTATIONS = <span class="string">'SOME_MUTATIONS'</span></span><br><span class="line"><span class="comment">// store.js</span></span><br><span class="line"><span class="keyword">import</span> &#123; SOME_MUTATIONS &#125; <span class="keyword">from</span> <span class="string">'./mutation-types'</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> store = <span class="keyword">new</span> Vuex.Store(&#123;</span><br><span class="line">  state: &#123;</span><br><span class="line">    <span class="comment">// ...</span></span><br><span class="line">  &#125;,</span><br><span class="line">  mutations: &#123;</span><br><span class="line">    [SOME_MUTATIONS] (state) &#123;</span><br><span class="line">      <span class="comment">// state mutate</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-01-14T02:35:10.000Z" title="2020-01-14T02:35:10.000Z">2020-01-14</time><span class="level-item"><a class="link-muted" href="/TianTiYream.github.io/categories/Vue/">Vue</a></span><span class="level-item">几秒 读完 (大约 106 个字)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/TianTiYream.github.io/2020/01/14/%E6%90%AD%E5%BB%BAvue%E9%A1%B9%E7%9B%AE/">搭建Vue项目</a></h1><div class="content"><blockquote>
+<p>安装vue脚手架</p>
+</blockquote>
+<p><code>npm install vue-cli -g</code></p>
+<blockquote>
+<p>创建vue项目</p>
+</blockquote>
+<ol>
+<li><code>vue init webpack 项目名</code></li>
+<li>根据需要选择Y或N，一般会选择安装vue-router，不安装测试相关，依赖包可手动安装</li>
+<li><code>npm run dev</code>启动项目</li>
+</ol>
+<blockquote>
+<p>常见问题</p>
+</blockquote>
+<p>安装依赖包失败，卡住等，可清除后重新安装或者使用yarn</p>
+<p><code>npm cache clean -f</code> 清缓存</p>
+<p><code>npm install</code> 或 <code>yarn install</code></p>
+</div></article></div><div class="card"><div class="card-image"><a class="image is-7by3" href="/TianTiYream.github.io/2019/12/05/Vue%E4%B8%AD%E7%9A%84mixin/"><img class="thumbnail" src="/TianTiYream.github.io/gallery/thumbnails/rat.jpg" alt="Vue中的mixin"></a></div><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2019-12-05T01:51:50.000Z" title="2019-12-05T01:51:50.000Z">2019-12-05</time><span class="level-item"><a class="link-muted" href="/TianTiYream.github.io/categories/Vue/">Vue</a></span><span class="level-item">1 分钟 读完 (大约 164 个字)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/TianTiYream.github.io/2019/12/05/Vue%E4%B8%AD%E7%9A%84mixin/">Vue中的mixin</a></h1><div class="content"><h3 id="使用mixin的原因"><a href="#使用mixin的原因" class="headerlink" title="使用mixin的原因"></a>使用mixin的原因</h3><ul>
+<li>代码复用</li>
+<li>项目的共享文件</li>
+<li>减少耦合</li>
+</ul>
+<h3 id="mixin的用法"><a href="#mixin的用法" class="headerlink" title="mixin的用法"></a>mixin的用法</h3><ul>
+<li>正常vue文件的结构，但以<code>.js</code>为后缀</li>
+<li>在需要使用的文件中使用时，<code>import share from @/mixins/share.js</code>，然后在vue文件的<code>data</code>同级加上<code>mixins: [share,mixin2,...]</code>，引入后即可使用share.js中的所有方法</li>
+<li>有时见到<code>import {} from ...</code>的用法，使用{}时，相应js文件中用export导出，不使用{}用export default导出</li>
+</ul>
+<h3 id="mixin的原理"><a href="#mixin的原理" class="headerlink" title="mixin的原理"></a>mixin的原理</h3><ul>
+<li>本质是js文件</li>
+<li>vue内部做了处理，使其具有生命周期函数、computed等功能，方便数据传输</li>
+</ul>
+</div></article></div></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1"><div class="card widget"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="/TianTiYream.github.io/img/photo.jpg" alt="Yream"></figure><p class="title is-size-4 is-block line-height-inherit">Yream</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>上海</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/TianTiYream.github.io/archives"><p class="title">13</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/TianTiYream.github.io/categories"><p class="title">7</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/TianTiYream.github.io/tags"><p class="title">7</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="/TianTiYream.github.io/" target="_blank" rel="noopener">关注我</a></div></div></div><!--!--><div class="card widget"><div class="card-content"><h3 class="menu-label">最新文章</h3><article class="media"><div class="media-content size-small"><p><time dateTime="2020-08-21T06:39:03.000Z">2020-08-21</time></p><p class="title is-6"><a class="link-muted" href="/TianTiYream.github.io/2020/08/21/%E6%AD%A3%E5%90%91%E4%BB%A3%E7%90%86%E5%92%8C%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/">正向代理和反向代理</a></p><p class="is-uppercase"><a class="link-muted" href="/TianTiYream.github.io/categories/Vue/">Vue</a></p></div></article><article class="media"><a class="media-left" href="/TianTiYream.github.io/2020/07/27/Vue%E5%93%8D%E5%BA%94%E5%BC%8F%E5%8E%9F%E7%90%86/"><p class="image is-64x64"><img class="thumbnail" src="/TianTiYream.github.io/gallery/thumbnails/rat.jpg" alt="Vue响应式原理"></p></a><div class="media-content size-small"><p><time dateTime="2020-07-27T08:03:54.000Z">2020-07-27</time></p><p class="title is-6"><a class="link-muted" href="/TianTiYream.github.io/2020/07/27/Vue%E5%93%8D%E5%BA%94%E5%BC%8F%E5%8E%9F%E7%90%86/">Vue响应式原理</a></p><p class="is-uppercase"><a class="link-muted" href="/TianTiYream.github.io/categories/Vue/">Vue</a></p></div></article><article class="media"><a class="media-left" href="/TianTiYream.github.io/2020/07/14/node%E8%84%9A%E6%9C%AC%E5%AE%9A%E6%9C%9F%E6%B8%85%E9%99%A4%E5%BE%AE%E4%BF%A1%E6%96%87%E4%BB%B6/"><p class="image is-64x64"><img class="thumbnail" src="/TianTiYream.github.io/gallery/thumbnails/rat.jpg" alt="node脚本定期清除微信文件"></p></a><div class="media-content size-small"><p><time dateTime="2020-07-14T02:51:23.000Z">2020-07-14</time></p><p class="title is-6"><a class="link-muted" href="/TianTiYream.github.io/2020/07/14/node%E8%84%9A%E6%9C%AC%E5%AE%9A%E6%9C%9F%E6%B8%85%E9%99%A4%E5%BE%AE%E4%BF%A1%E6%96%87%E4%BB%B6/">node脚本定期清除微信文件</a></p><p class="is-uppercase"><a class="link-muted" href="/TianTiYream.github.io/categories/nodeJs/">nodeJs</a></p></div></article><article class="media"><a class="media-left" href="/TianTiYream.github.io/2020/06/28/vuex%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/"><p class="image is-64x64"><img class="thumbnail" src="/TianTiYream.github.io/gallery/thumbnails/rat.jpg" alt="vuex学习总结"></p></a><div class="media-content size-small"><p><time dateTime="2020-06-28T09:05:38.000Z">2020-06-28</time></p><p class="title is-6"><a class="link-muted" href="/TianTiYream.github.io/2020/06/28/vuex%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/">vuex学习总结</a></p><p class="is-uppercase"><a class="link-muted" href="/TianTiYream.github.io/categories/Vue/">Vue</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-06-17T01:35:45.000Z">2020-06-17</time></p><p class="title is-6"><a class="link-muted" href="/TianTiYream.github.io/2020/06/17/%E4%BD%BF%E7%94%A8fiddler%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/">使用fiddler遇到的问题</a></p><p class="is-uppercase"><a class="link-muted" href="/TianTiYream.github.io/categories/%E7%BD%91%E7%BB%9C/">网络</a></p></div></article></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">标签</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/TianTiYream.github.io/tags/JavaScript/"><span class="tag">JavaScript</span><span class="tag is-grey-lightest">2</span></a></div><div class="control"><a class="tags has-addons" href="/TianTiYream.github.io/tags/Vue/"><span class="tag">Vue</span><span class="tag is-grey-lightest">5</span></a></div><div class="control"><a class="tags has-addons" href="/TianTiYream.github.io/tags/hexo/"><span class="tag">hexo</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/TianTiYream.github.io/tags/nodeJs/"><span class="tag">nodeJs</span><span class="tag is-grey-lightest">2</span></a></div><div class="control"><a class="tags has-addons" href="/TianTiYream.github.io/tags/react/"><span class="tag">react</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/TianTiYream.github.io/tags/windows/"><span class="tag">windows</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/TianTiYream.github.io/tags/%E7%BD%91%E7%BB%9C/"><span class="tag">网络</span><span class="tag is-grey-lightest">1</span></a></div></div></div></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">订阅更新</h3><form action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open(&#039;https://feedburner.google.com/fb/a/mailverify?uri=&#039;,&#039;popupwindow&#039;,&#039;scrollbars=yes,width=550,height=520&#039;);return true"><input type="hidden" value="" name="uri"><input type="hidden" name="loc" value="en_US"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button is-primary" type="submit" value="订阅"></div></div></form></div></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/TianTiYream.github.io/"><img src="/TianTiYream.github.io/img/heart.png" alt="Yream&#039;s Blog" height="28"></a><p class="size-small"><span>&copy; 2020 Yream</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script>moment.locale("zh-CN");</script><script>var IcarusThemeSettings = {
+            site: {
+                url: 'http://tiantiyream.github.io/TianTiYream.github.io',
+                external_link: {"enable":true,"exclude":[]}
+            },
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script src="/TianTiYream.github.io/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/TianTiYream.github.io/js/back_to_top.js" defer></script><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><script src="/TianTiYream.github.io/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/TianTiYream.github.io/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/TianTiYream.github.io/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>
