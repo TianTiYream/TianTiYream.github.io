@@ -10960,8 +10960,16 @@ footer.footer .level-end .field {
     margin-top: 1rem;
   }
 }
+.footer-logo {
+  float: left;
+  margin-top: -0.16rem;
+}
 .footer-logo img {
   max-height: 1.75rem;
+}
+p.size-small {
+  float: left;
+  margin-left: 0.8rem;
 }
 .pagination .pagination-link a,
 .pagination .pagination-ellipsis a,
@@ -11030,7 +11038,7 @@ footer.footer .level-end .field {
   z-index: 100;
   font-size: 1rem;
   line-height: 0;
-  background: rgba(0,0,0,0.86);
+  background: rgba(0,0,0,0.3);
 }
 .searchbox.show {
   display: flex;

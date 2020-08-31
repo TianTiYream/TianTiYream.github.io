@@ -9,7 +9,7 @@
 <h3 id="mixin的用法"><a href="#mixin的用法" class="headerlink" title="mixin的用法"></a>mixin的用法</h3><ul>
 <li>正常vue文件的结构，但以<code>.js</code>为后缀</li>
 <li>在需要使用的文件中使用时，<code>import share from @/mixins/share.js</code>，然后在vue文件的<code>data</code>同级加上<code>mixins: [share,mixin2,...]</code>，引入后即可使用share.js中的所有方法</li>
-<li>有时见到<code>import {} from ...</code>的用法，使用{}时，相应js文件中用export导出，不使用{}用export default导出</li>
+<li>有时见到<code>import &#123;&#125; from ...</code>的用法，使用{}时，相应js文件中用export导出，不使用{}用export default导出</li>
 </ul>
 <h3 id="mixin的原理"><a href="#mixin的原理" class="headerlink" title="mixin的原理"></a>mixin的原理</h3><ul>
 <li>本质是js文件</li>
